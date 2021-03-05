@@ -1,29 +1,19 @@
 # docker-quagga
 
-Dockerfile with Alpine Linux and Quagga for GNS3.
+Dockerfile with Alpine Linux and Quagga Version 1.2.1 for GNS3.
 
-Docker Hub: fknorre/quagga:latest
+Docker Hub: fknorre/quagga:1.2.1-alpine
 
 ## Usage
 
 Run
 ```bash
-docker run --rm -t -d fknorre/quagga
+docker run --rm -t -d --name quagga fknorre/quagga:1.2.1-alpine
 ```
 
 Shell
 ```bash
-docker exec -it <container-name> sh
-```
-
-Config-Files 
-```bash
-cd /etc/quagga/
-```
-
-Log-Files 
-```bash
-cd /var/log/quagga/
+docker exec -it quagga sh
 ```
 
 Run telnet
@@ -31,11 +21,19 @@ Run telnet
 telnet localhost 2602
 ```
 
-## Build
+## Re-/Build
 
 
 Re-/Build:
 
 ```bash
-docker build --tag fknorre/quagga:latest .
+docker build --tag fknorre/quagga:1.2.1-alpine .
 ```
+
+## Example
+
+### RIPv2
+
+![RIP-Topology](./images/rip.PNG)
+
+### OSPF
