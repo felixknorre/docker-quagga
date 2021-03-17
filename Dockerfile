@@ -20,10 +20,10 @@ RUN apk update \
         net-snmp-dev \
         busybox-extras
 
-# clone repo and install quagga 1.2.1
+# clone repo and install quagga 1.2.2
 RUN git clone https://github.com/Quagga/quagga.git \
         && cd quagga \
-        && git checkout tags/quagga-1.2.1 \
+        && git checkout tags/quagga-1.2.2 \
         && ./bootstrap.sh \
         && ./configure --enable-vtysh --localstatedir=/var/run/quagga --sysconfdir=/etc/quagga \
         && make \
