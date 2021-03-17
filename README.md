@@ -8,7 +8,7 @@ Docker Hub: `fknorre/quagga:1.2.2-alpine`
 
 Run
 ```bash
-docker run --rm -t -d --name quagga fknorre/quagga:1.2.1-alpine
+docker run --rm -t -d --name quagga fknorre/quagga:1.2.2-alpine
 ```
 
 ## Re-/Build
