@@ -54,7 +54,7 @@ RUN rm /etc/quagga/*.sample* \
 
 # change owner and group
 RUN addgroup -S quagga && adduser -S quagga -G quagga \
-	&& chown quagga:quagga /etc/quagga \
+	&& chown -R quagga:quagga /etc/quagga \
         && chown quagga:quagga /var/run/quagga \
         && chown quagga:quagga /etc/quagga/*.conf \
         && chown quagga:quagga /var/log/quagga/*.log
