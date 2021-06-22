@@ -4,7 +4,7 @@ Dockerfile with alpine linux and quagga for GNS3.
 
 This is a container which I used for education purposes. 
 
-You can find this container on Docker Hub: [fknorre/quagga](https://hub.docker.com/repository/docker/fknorre/quagga)
+You can find this container on Docker Hub: [fknorre/quagga](https://hub.docker.com/r/fknorre/quagga)
 
 ## Usage Docker
 
