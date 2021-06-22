@@ -20,7 +20,7 @@ docker build --tag fknorre/quagga:<version> .
 
 ## Usage Quagga
 
-The config files are located under `/etc/quagga` and are empty so that the students can configure them. If you want to preconfigure the config files add them to the Dockerfile or create an new image from a preconfigured container uning `docker commit <container-name>`.
+The config files are located under `/etc/quagga` and are empty so that the students can configure them. If you want to have preconfigured config files add them to the Dockerfile or create an new image from a preconfigured container using `docker commit <container-name>`.
 
 If you want to use RIP, use `fknorre/quagga:1.2.2-alpine`.
 
